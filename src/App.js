@@ -32,10 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <ol>
-          <li> fsdfsdvsdv </li>
-          <li> fsdfsdvsdv </li>
-          <li> fsdfsdvsdv </li> 
-          <li> fsdfsdvsdv </li>
+         
         </ol>
         <input
           type="text"
@@ -43,9 +40,8 @@ class App extends Component {
           value={this.state.userInput}
         ></input>
 
-        <p> {this.state.userInput}</p>
+        <p>{this.state.userInput}</p>
         <Validation inputLength={this.state.userInput.length}>
-             
         </Validation>
         {charList}
       </div>
