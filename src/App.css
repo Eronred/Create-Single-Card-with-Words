@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .App {
   text-align: center;
 }
@@ -28,11 +30,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes App {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+.input{
+  height: 25px;
+  font-family: 'montserrat', sans-serif;
+  box-shadow: 0 3px 10px 4px rgba(79, 139, 228, 0.7);
+}
+.pText{
+  font-size:55px;
+  font-family: 'montserrat', sans-serif;
+}
+.card:hover{
+  background-color: aqua;
 }

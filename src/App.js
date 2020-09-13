@@ -9,9 +9,10 @@ class App extends Component {
     userInput: "",
   };
 
+
    deleteCharHandler=(index)=>{
        const text=this.state.userInput.split('');
-       text.splice(index, 1);
+       text.splice(index, 2);
        const updatedText=text.join('');
        this.setState({userInput:updatedText});
    }
@@ -34,13 +35,14 @@ class App extends Component {
         <ol>
          
         </ol>
-        <input
+        <input className="input"
           type="text"
           onChange={this.inputChangedHndler}
           value={this.state.userInput}
         ></input>
 
         <p>{this.state.userInput}</p>
+        
         <Validation inputLength={this.state.userInput.length}>
         </Validation>
         {charList}
